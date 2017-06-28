@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/select2.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel-core.min.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel-control.min.js">
+  </script>
+  <script type="text/javascript" src="js/jquery.jcarousel-pagination.min.js">
+  </script>
+  <script type="text/javascript" src="js/select2.js">
+  </script>
+  <script type="text/javascript" src="js/jquery.deepcheckbox.min.js">
+       </script>
+  <script type="text/javascript" src="js/jquery.color.js"></script>
+
+    <!-- <script type="text/javascript" src="js/cusel.js">
+      </script>
+  <script type="text/javascript" src="js/cusel-min-2.5.js">
+      </script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"  >
+      </script>
+  <script type="text/javascript" src="js/jScrollPane.js">
+  </script>-->
+  <script type="text/javascript" src="js/script.js">
+  </script>
+  <title>Homework 9-10</title>
+</head>
+<body>
+  <div class="wrapper">
+
+<div id="root">
+
+<div class="jcarousel">
+    <ul class="jcarousel-list">
+        <li class="jcarousel-item">
+          <img src="images/img1.jpg" alt="Фото" id="img1">
+        </li>
+        <li class="jcarousel-item">
+          <img src="images/img2.jpg" alt="Фото" id="img2">
+        </li>
+        <li class="jcarousel-item">
+          <img src="images/img3.jpg" alt="Фото" id="img3">
+        </li>
+    </ul>
+    <a class="jcarousel-prev" href="#">Prev</a>
+    <a class="jcarousel-next" href="#">Next</a>
+  <!--  <div class="jcarousel-pagination">
+    <ul>
+      <li><a href="#1" class="active">1</a></li>
+      <li><a href="#2" class>2</a></li>
+      <li><a href="#3" class>3</a></li>
+    </ul>
+  </div> -->
+</div>
+<form action="#">
+  <fieldset>
+    <legend>Select с jQuery-плагином</legend>
+      <div class="lineForm">
+          <label>Селект со скролом и длинным значением</label>
+          <select class="sel80" id="country" name="country" tabindex="2">
+          <option value="1">Россия</option>
+          <option value="2">Украина</option>
+          <option value="3">Чехия</option>
+          <option value="4">Словакия</option>
+          <option value="5">Румыния</option>
+          <option value="6">Болгария</option>
+          <option value="7">Польша</option>
+          <option value="8">Германия</option>
+          <option value="9">Франция</option>
+          <option value="10">Англия</option>
+          <option value="11">Испания</option>
+          <option value="12">аравия аравия аравия аравия аравия</option>
+          <option selected="selected" value="1000">Выберите страну...</option>
+          </select>
+      </div>
+    </fieldset>
+      <fieldset>
+  <legend>Checkbox с jQuery-плагином </legend>
+<div class="checkbox">
+
+      <ul>
+    <li>
+        <input type="checkbox" data-id="item" data-name="Item" /> Item
+        <ul>
+            <li><input type="checkbox" data-id="subitem1" data-name="Subitem 1" /> Subitem 1</li>
+            <li><input type="checkbox" data-id="subitem2" data-name="Subitem 2" /> Subitem 2</li>
+            <li><input type="checkbox" data-name="Subitem 3" /> Subitem 3</li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+</fieldset>
+<fieldset>
+  <legend>Checkbox на CSS</legend>
+
+<p>
+  <input type="checkbox" class="checkbo" id="checkbox" name="checkbox" />
+  <label for="checkbox">Выбор 1</label>
+</p>
+<p>
+  <input type="checkbox" class="checkbo" id="checkbox2" />
+  <label for="checkbox2">Выбор 2</label>
+</p>
+<p>
+  <input type="checkbox" class="checkbo" id="checkbox3" value="checkbox" />
+  <label for="checkbox3">Выбор 3</label>
+</p>
+</fieldset>
+
+</form>
+
+<div class="menuWrapper">
+<ul class="menu">
+  <li>
+    <a href="">Menu Link</a>
+    <ul class="submenu">
+      <li><a href="">Submenu Link</a>
+          <ul class="subsubmenu">
+            <li><a href="">subsub</a></li>
+            <li><a href="">subsub</a></li>
+            <li><a href="">subsub</a></li>
+          </ul>
+      </li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">Menu Link</a>
+    <ul class="submenu">
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">Menu Link</a>
+    <ul class="submenu">
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">Menu Link</a>
+    <ul class="submenu">
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">Menu Link</a>
+    <ul class="submenu">
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+      <li><a href="">Submenu Link</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+
+
+</div>
+</div>
+
+</body>
+</html>

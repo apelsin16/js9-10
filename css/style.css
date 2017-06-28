@@ -1,0 +1,155 @@
+  /*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 640px;
+
+
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+.jcarousel-prev {
+  float: left;
+  left: 15px;
+}
+.jcarousel-next {
+  float: right;
+  right: 15px;
+}
+
+.checkbox ul li{
+  list-style: none;
+  margin: 10px;
+}
+
+form fieldset p{
+  margin: 10px;
+}
+
+.checkbo + label {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+.checkbo:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbo:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+.checkbo:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+.checkbo:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+.checkbo:checked + label:before {
+  background: grey;
+}
+
+.checkbo:checked + label:after {
+  left: 26px;
+}
+.checkbo:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin-top: 50px;
+  background-color: #F00;
+
+}
+
+
+
+
+.menu a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+background-color: #F00;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  margin-left: 0px;
+}
+
+.submenu a:hover {
+  background-color: #F00;
+}
+
+.submenu a {
+  font-size: 18px;
+}
+.subsubmenu{
+  list-style: none;
+  display: none;
+  margin-left: 108px;
+  margin-top: -20px;
+  position: absolute;
+}
